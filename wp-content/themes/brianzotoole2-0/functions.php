@@ -87,11 +87,37 @@ add_action( 'wp_enqueue_scripts', 'brianzotoole2_0_scripts' );
 
 
 require get_template_directory() . '/inc/custom-header.php';
-
 require get_template_directory() . '/inc/template-tags.php';
-
 require get_template_directory() . '/inc/extras.php';
-
 require get_template_directory() . '/inc/customizer.php';
-
 require get_template_directory() . '/inc/jetpack.php';
+
+
+//* Remove header junk
+/*Removes RSD, XMLRPC, WLW, WP Generator, ShortLink and Comment Feed links*/
+add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
+
+function dequeue_jquery_migrate( &$scripts){
+	if(!is_admin()){
+		$scripts->remove( 'jquery');
+		$scripts->add( 'jquery', false, array( 'jquery-core' ), '1.10.2' );
+	}
+}
+
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'wp_generator');
+remove_action('wp_head', 'wp_shortlink_wp_head');
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+remove_action('wp_head', 'feed_links', 2);
+remove_action('wp_head', 'feed_links_extra', 3 );
+
+/*Removes prev and next article links*/
+add_filter( 'index_rel_link', '__return_false' );
+add_filter( 'parent_post_rel_link', '__return_false' );
+add_filter( 'start_post_rel_link', '__return_false' );
+add_filter( 'previous_post_rel_link', '__return_false' );
+add_filter( 'next_post_rel_link', '__return_false' );
