@@ -281,7 +281,26 @@ h6 {
   clear: both;
   font-family: "Montserrat", serif, Helvetica; }
 
+h1 {
+  font-size: 2.2em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.8em; }
+
+h4 {
+  font-size: 1.6em; }
+
+h5 {
+  font-size: 1.4em; }
+
+h6 {
+  font-size: 1.2em; }
+
 p {
+  font-size: 1em;
   margin-bottom: 1.5em; }
 
 dfn,
@@ -846,12 +865,14 @@ object {
   -moz-border-radius: 50%; }
 
 .star {
-  margin: 25px auto 30px;
+  margin: 30px auto;
   padding: 0;
   max-width: 250px;
   border: 0;
   border-top: solid 5px;
-  text-align: center; }
+  border-color: whitesmoke;
+  text-align: center;
+  color: #343f53; }
   .star:after {
     content: "\e805";
     display: inline-block;
@@ -859,32 +880,62 @@ object {
     top: -.8em;
     padding: 0 .25em;
     font-family: Fontello;
-    font-size: 2em; }
+    font-size: 2em;
+    background: whitesmoke; }
 
 /*--------------------------------------------------------------
 # Templates
 --------------------------------------------------------------*/
 /* home */
 .slide.about {
-  background: white;
-  color: #333333; }
+  text-align: center;
+  background: #343f53;
+  color: whitesmoke; }
   .slide.about img {
     display: block;
-    margin: 150px auto auto;
-    width: 75px;
+    margin: 125px auto auto;
+    width: 85px;
     height: auto;
-    background: #dbdbdb;
-    padding: 5px;
-    border: 1px solid #d6d6d6; }
+    background: #e3e3e3;
+    padding: 5px; }
+  .slide.about .skills {
+    font-size: 1.125em; }
+  .slide.about .star:after {
+    background: #343f53;
+    color: whitesmoke; }
 .slide.articles {
-  background: #343f53;
-  color: white; }
+  background: whitesmoke;
+  color: #343f53; }
+  .slide.articles h2 {
+    color: #343f53; }
+  .slide.articles .star {
+    border-color: #343f53; }
+    .slide.articles .star:after {
+      background: whitesmoke;
+      color: #343f53; }
 .slide.work {
   background: white;
   color: #333333; }
+  .slide.work h2 {
+    color: #343f53; }
+  .slide.work .star {
+    border-color: #343f53; }
+    .slide.work .star:after {
+      background: white;
+      color: #343f53; }
 .slide.contact {
   background: #343f53;
   color: white; }
+  .slide.contact h2 {
+    color: white; }
+  .slide.contact .star {
+    border-color: white; }
+    .slide.contact .star:after {
+      background: #343f53;
+      color: white; }
+
+.title {
+  text-align: center; }
 
 /* Media Queries ----------------------------------------------------------- */
 @media screen and (max-width: 480px) {

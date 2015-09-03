@@ -200,12 +200,14 @@
 	-moz-border-radius: 50%;
 }
 .star {
-	margin: 25px auto 30px;
+	margin: 30px auto;
     padding: 0;
     max-width: 250px;
     border: 0;
     border-top: solid 5px;
+    border-color: $white;
     text-align: center;
+    color: $blue;
     &:after {
 		content: "\e805";
 		display: inline-block;
@@ -214,6 +216,7 @@
 		padding: 0 .25em;
 		font-family: Fontello;
 	    font-size: 2em;
+	    background: $white;
    }
 }
 /*--------------------------------------------------------------
@@ -222,28 +225,71 @@
 /* home */
 .slide {
 	&.about {
-		background: white;
-		color: $black;
+		text-align: center;
+		background: $blue;
+		color: $white;
 		img {
 			display: block;
-			margin: 150px auto auto;
-			width: 75px;
+			margin: 125px auto auto;
+			width: 85px;
 			height: auto;
-			background: $gray;
+			background: darken($white,7%);
 			padding: 5px;
-			border: 1px solid $border1;
+		}
+		.skills {
+			font-size: 1.125em;
+		}
+		.star {
+			&:after {
+				background: $blue;
+				color: $white;
+			}
 		}
 	}
 	&.articles {
-		background: $blue;
-		color: white;
+		background: $white;
+		color: $blue;
+		h2 {
+			color: $blue;
+		}
+		.star {
+			border-color: $blue;
+			&:after {
+				background: $white;
+				color: $blue;
+			}
+		}
 	}
 	&.work {
 		background: white;
 		color: $black;
+		h2 {
+			color: $blue;
+		}
+		.star {
+			border-color: $blue;
+			&:after {
+				background: white;
+				color: $blue;
+			}
+		}
 	}
 	&.contact {
 		background: $blue;
 		color: white;
+		h2 {
+			color: white;
+		}
+		.star {
+			border-color: white;
+			&:after {
+				background: $blue;
+				color: white;
+			}
+		}
 	}
+}
+
+.title {
+	text-align: center;
 }
