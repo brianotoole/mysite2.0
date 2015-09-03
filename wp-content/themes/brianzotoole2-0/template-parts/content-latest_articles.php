@@ -13,18 +13,25 @@ if ( $loop->have_posts() ) {
 	while ( $loop->have_posts() ) {
 		$loop->the_post(); ?>
 		<div class="grid_11">
-		  <a href="<?php the_permalink() ?>"><h2 class="post-title"><?php the_title(); ?></h2></a>
+		  <a href="<?php the_permalink() ?>"><h4 class="post-title"><?php the_title(); ?></h4></a>
 		  <?php the_excerpt('my_excerpt_length'); ?>
-		</div>
+		</div><!--/.grid-->
 		<div class="grid_1 omega">
 		  <?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
 				  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
-		    <img class="circle" src="<?php echo $image; ?>">
+		    <a href="<?php the_permalink() ?>">
+		      <img class="thumbnail circle" src="<?php echo $image; ?>">
+		    </a>
 		  
 		  <?php else: //if no featured image is uploaded, show default icon img ?>
-		    <div class="thumbnail circle"><i class="icon-magic"></i></div>
+		    <a href="<?php the_permalink() ?>">
+		      <div class="thumbnail default circle">
+		        <i class="icon-magic"></i>
+		      </div>
+		    </a>
 		  <?php endif; ?>
-		</div>
+		</div><!--/.grid-->
+		<div class="clearfix"></div><hr />
 
 
 <?php } 

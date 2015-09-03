@@ -248,9 +248,12 @@
 	}
 	&.articles {
 		background: $white;
-		color: $blue;
+		color: $black;
 		h2 {
 			color: $blue;
+		}
+		p.about {
+			font-size: 1.125em;
 		}
 		.star {
 			border-color: $blue;
@@ -258,6 +261,9 @@
 				background: $white;
 				color: $blue;
 			}
+		}
+		a {
+			text-decoration: none;
 		}
 	}
 	&.work {
@@ -287,6 +293,9 @@
 				color: white;
 			}
 		}
+		a {
+			color: white;
+		}
 	}
 }
 
@@ -294,16 +303,34 @@
 	text-align: center;
 }
 .post-title {
+    margin-top: 0;
+    margin-bottom: 5px;
 	text-align: left;
 }
 .thumbnail {
-	background: $blue;
+	background: transparent;
 	width: 60px;
 	height: 60px;
-	i {
-		position: absolute;
-		color: $white;
-		font-size: 1.475em;
-		margin: 15px;
-	}
+	cursor: pointer;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transform: scale(1.05);
+    &.default {
+    	background: $blue;
+    	opacity: 0.75;
+		i {
+			position: absolute;
+			color: $white;
+			font-size: 1.475em;
+			margin: 15px;
+		}
+		&:hover {
+			opacity: 1;
+			transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+		}
+    }
 }

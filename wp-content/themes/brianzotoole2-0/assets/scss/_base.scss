@@ -100,10 +100,13 @@ big {
 --------------------------------------------------------------*/
 a {
 	color: $blue;
-	&:hover, &:focus, &:active, &:visted {
+	&:hover, &:focus, &:active {
 		color: darken($blue,5%);
 		outline: 0;
 	}
+}
+a:visted {
+	color: $blue;
 }
 
 /*--------------------------------------------------------------

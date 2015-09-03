@@ -15,7 +15,8 @@
     <div class="grid_12">
 	  <h2 class="title">Learn With Me</h2>
 	  <hr class="star">
-	  <p>I am a digital projects director &amp; web developer located in Tampa, Florida. My skills range from web development to creative strategy. I enjoy using responsive techniques to build websites that provide a low-bandwidth and meaningful user experience.</p>
+	  <p class="about">I am a digital projects director &amp; web developer located in Tampa, Florida. My skills range from web development to creative strategy. I enjoy using responsive techniques to build websites that provide a low-bandwidth and meaningful user experience.</p>
+	  <hr />
 	  <?php get_template_part( 'template-parts/content', 'latest_articles' ); ?>
     </div><!--/.grid-->
   </div><!--/.container-->
@@ -37,6 +38,7 @@
     <div class="grid_12">
 	  <h2 class="title">Let's Talk</h2>
 	  <hr class="star">
+	  <p>Need help on a project? Have an investment opportunity? Want to talk about an idea? Whatever it is, let's create something together. Shoot me an email or <a href="//twitter.com/brianotoole" target="_blank">tweet me</a>. Whichever you prefer, I'll do my best to get back to you asap.</p>
     </div><!--/.grid-->
   </div><!--/.container-->
 </div><!--/.slide .contact #slide4-->
