@@ -33,13 +33,18 @@ if ( $loop->have_posts() ) {
 		</div><!--/.grid-->
 		<div class="clearfix"></div><hr />
 
-
 <?php } 
 } else {
 	echo '<p>There are no recent articles at this time.</p>';
 }
-
-// Restore original Post Data
 wp_reset_postdata();
 
+//if there are 3 or more published posts, show view more link
+$count_posts = wp_count_posts(); 
+$published_posts = $count_posts->publish;
+  if( $published_posts >= 3 ) {
+    echo '<div class="col-sm-12 text-center no-padding">';
+	echo '<a href="' . get_option('home') . '/news" class="button lg blue omega">' . 'View More Articles' . '</a>';
+	echo '</div>'; 
+  }
 ?>

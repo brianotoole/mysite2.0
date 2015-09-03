@@ -6,7 +6,11 @@
 
 @media screen and (min-width: 768px) {}//end
 
-@media screen and (max-width: 768px) {}//end
+@media screen and (max-width: 768px) {
+	.button {
+		width: 100%;
+	}
+}//end
 
 @media  screen and (max-width: 480px) {
   .grid_1,.grid_10,.grid_11,.grid_12,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9 {

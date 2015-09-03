@@ -204,21 +204,28 @@ textarea {
 	width: 100%;
 }
 /* button classes */
-button {
-	.peach {
-		background: $peach;
-		color: white;
-		&:hover {
-			background: darken($peach, 5%);
-		}
+.button {
+	display: block;
+    margin: 0 auto;
+    width: 25%;
+    text-align: center;
+	margin-top: 15px;
+	border-radius: 5px;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	&.lg{
+	    padding: 18px 27px;
+	    font-size: 1.125em;
 	}
-}
-button {
-	.blue {
-		background: $blue;
-		color: white;
+	&.blue {
+		background: transparent;
+		color: $blue;
+		border: 2px solid $blue;
 		&:hover {
-			background: darken($blue, 5%);
+			background: white;
+			color: $blue;
 		}
 	}
 }
