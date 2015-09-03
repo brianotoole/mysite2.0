@@ -207,12 +207,12 @@
     border-top: solid 5px;
     text-align: center;
     &:after {
-		content: "\f005";
+		content: "\e805";
 		display: inline-block;
 		position: relative;
 		top: -.8em;
 		padding: 0 .25em;
-		font-family: FontAwesome;
+		font-family: Fontello;
 	    font-size: 2em;
    }
 }
