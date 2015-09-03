@@ -219,6 +219,14 @@ textarea {
 	    padding: 18px 27px;
 	    font-size: 1.125em;
 	}
+	&.md{
+	    padding: 14px 27px;
+	    font-size: 1.125em;
+	}
+	&.sm{
+	    padding: 10px 27px;
+	    font-size: 1em;
+	}
 	&.blue {
 		background: transparent;
 		color: $blue;

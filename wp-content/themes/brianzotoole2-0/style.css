@@ -465,6 +465,12 @@ textarea {
   .button.lg {
     padding: 18px 27px;
     font-size: 1.125em; }
+  .button.md {
+    padding: 14px 27px;
+    font-size: 1.125em; }
+  .button.sm {
+    padding: 10px 27px;
+    font-size: 1em; }
   .button.blue {
     background: transparent;
     color: #343f53;

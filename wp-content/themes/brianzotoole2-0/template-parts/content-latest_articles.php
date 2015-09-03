@@ -42,9 +42,9 @@ wp_reset_postdata();
 //if there are 3 or more published posts, show view more link
 $count_posts = wp_count_posts(); 
 $published_posts = $count_posts->publish;
-  if( $published_posts >= 3 ) {
+  if (is_page('home') && ( $published_posts >= 3 )) {
     echo '<div class="col-sm-12 text-center no-padding">';
-	echo '<a href="' . get_option('home') . '/news" class="button lg blue omega">' . 'View More Articles' . '</a>';
+	echo '<a href="' . get_option('home') . '/articles" class="button md blue omega">' . 'View More Articles' . '</a>';
 	echo '</div>'; 
   }
 ?>
