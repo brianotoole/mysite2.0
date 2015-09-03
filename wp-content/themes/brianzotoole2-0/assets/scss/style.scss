@@ -1,15 +1,16 @@
 // Colors
-$blue: #343f53; 
-$peach: #f9c192;
-$black: #333;
-$white: #f5f5f5;
-$gray: #555;
+$blue: #343f53; //main
+$peach: #f9c192; //accent
+$black: #333; //text on light bg
+$white: #f5f5f5; //text on dark bg
+$gray: #DBDBDB;
+$border1: #D6D6D6;
 
 // Typography
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Lato:400,700');
 
-$font-heading: 'Open Sans', serif, Arial;
-$font-body: Verdana, serif, Arial;
+$font-heading: 'Montserrat', serif, Helvetica;
+$font-body: 'Lato', Verdana, Arial;
 
 @import "reset";
 @import "base";

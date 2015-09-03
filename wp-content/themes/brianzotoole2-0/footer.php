@@ -1,23 +1,15 @@
 <?php
 /**
  * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package brianzotoole2.0
  */
-
 ?>
 
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'brianzotoole2-0' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'brianzotoole2-0' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'brianzotoole2-0' ), 'brianzotoole2-0', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			&copy; Copyright 2015 | <a href=""><?php bloginfo('name'); ?></a> | <a id="top" href="#">Back to Top</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
