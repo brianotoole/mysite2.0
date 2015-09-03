@@ -178,20 +178,32 @@ td,
 th {
   padding: 0; }
 
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  background: #fff;
+  /* Fallback for when there is no custom background color defined. */ }
+
 body,
 button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #333333;
+  font-family: Verdana, serif, Arial;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
 h1,
 h2,
 h3,
@@ -230,7 +242,7 @@ code,
 kbd,
 tt,
 var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: Monaco, monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -251,39 +263,14 @@ big {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
-
-a:visited {
-  color: purple; }
-
-a:hover,
-a:focus,
-a:active {
-  color: midnightblue; }
-
-a:focus {
-  outline: thin dotted; }
-
-a:hover,
-a:active {
-  outline: 0; }
+  color: #343f53; }
+  a:hover, a:focus, a:active, a:visted {
+    color: #2a3343;
+    outline: 0; }
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-html {
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
-
-body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -338,35 +325,14 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border: 1px solid #333333;
   border-radius: 3px;
-  background: #e6e6e6;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  background: transparent;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-
-button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-button:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-  border-color: #aaa #bbb #bbb;
-  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
+  padding: .6em 1em .4em; }
 
 input[type="text"],
 input[type="email"],
@@ -374,28 +340,34 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
+  padding: 3px;
+  color: #333333;
   border: 1px solid #ccc;
   border-radius: 3px; }
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-  color: #111; }
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-  padding: 3px; }
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="password"]:focus,
+  input[type="search"]:focus,
+  textarea:focus {
+    color: #343f53; }
 
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+/* button classes */
+button .peach {
+  background: #f9c192;
+  color: white; }
+  button .peach:hover {
+    background: #f8b37a; }
+
+button .blue {
+  background: #343f53;
+  color: white; }
+  button .blue:hover {
+    background: #2a3343; }
 
 /*--------------------------------------------------------------
 # Accessibility
