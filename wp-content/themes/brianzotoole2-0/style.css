@@ -940,6 +940,19 @@ object {
 .title {
   text-align: center; }
 
+.post-title {
+  text-align: left; }
+
+.thumbnail {
+  background: #343f53;
+  width: 60px;
+  height: 60px; }
+  .thumbnail i {
+    position: absolute;
+    color: whitesmoke;
+    font-size: 1.475em;
+    margin: 15px; }
+
 /* Media Queries ----------------------------------------------------------- */
 @media screen and (max-width: 480px) {
   .grid_1, .grid_10, .grid_11, .grid_12, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9 {

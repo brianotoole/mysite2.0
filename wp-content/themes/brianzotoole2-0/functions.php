@@ -85,6 +85,23 @@ function brianzotoole2_0_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'brianzotoole2_0_scripts' );
 
+// shorten excerpt
+add_filter('excerpt_length', 'my_excerpt_length');
+function my_excerpt_length($length) {
+return 45; // words
+}
+// create linkable read more icon
+function new_excerpt_more( $more ) {
+	return '... <a class="more" href="'. get_permalink( get_the_ID() ) . '"> <i class="icon-right-dir"></i></a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+
+function view_more_news($more){
+global $post;
+return '... <p class="view" href="' . get_permalink($post->ID) . '">' . __('Read More', 'vday') . '</a>';
+}
+
 
 require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-tags.php';
