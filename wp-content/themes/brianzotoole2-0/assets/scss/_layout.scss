@@ -300,6 +300,7 @@
 		&.content {
 			background: white;
 			color: $black;
+			border-bottom: 4px solid darken(white,5%);//darken bg color
 		}
 	}
 }
