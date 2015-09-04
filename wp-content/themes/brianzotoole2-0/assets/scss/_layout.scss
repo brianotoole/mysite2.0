@@ -183,6 +183,7 @@
 --------------------------------------------------------------*/
 /* home */
 .slide {
+	//top section
 	&.about {
 		text-align: center;
 		background: $blue;
@@ -205,6 +206,7 @@
 			}
 		}
 	}
+	//articles section 
 	&.articles {
 		background: white;
 		color: $blue;
@@ -222,10 +224,14 @@
 				color: $blue;
 			}
 		}
+		.omega {
+			margin: 30px 0;
+		}
 		a {
 			text-decoration: none;
 		}
 	}
+	//work section
 	&.work {
 		background: $gray;
 		color: white;
@@ -240,6 +246,7 @@
 			}
 		}
 	}
+	//contact section
 	&.contact {
 		background: $blue;
 		color: white;
@@ -268,6 +275,12 @@
 	text-align: left;
 	color: $gray;
 }
+.entry-content {
+	.entry-date {
+		font-weight: 700;
+	}
+}
+
 .thumbnail {
 	background: transparent;
 	width: 60px;
