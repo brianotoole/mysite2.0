@@ -86,7 +86,7 @@ add_action( 'wp_enqueue_scripts', 'brianzotoole2_0_scripts' );
 // shorten excerpt
 add_filter('excerpt_length', 'my_excerpt_length');
 function my_excerpt_length($length) {
-return 45; // words
+return 50; // words
 }
 // create linkable read more icon
 function new_excerpt_more( $more ) {
