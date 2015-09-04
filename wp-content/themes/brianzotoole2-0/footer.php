@@ -7,7 +7,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="container site-footer" role="contentinfo">
 		<div class="site-info">
 			&copy; Copyright 2015 | <a href=""><?php bloginfo('name'); ?></a> | <a id="top" href="#">Back to Top</a>
 		</div><!-- .site-info -->

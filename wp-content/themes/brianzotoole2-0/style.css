@@ -977,6 +977,11 @@ object {
       -moz-transform: scale(1.05);
       -ms-transform: scale(1.05); }
 
+/* footer */
+.site-footer {
+  padding: 30px 0px;
+  text-align: center; }
+
 /* Media Queries ----------------------------------------------------------- */
 @media screen and (max-width: 768px) {
   .button {
