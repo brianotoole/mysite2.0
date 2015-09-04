@@ -3,18 +3,17 @@
 --------------------------------------------------------------*/
 .main-navigation {
 	position: fixed;
-	display: block;
 	float: left;
 	width: 100%;
 	height: 40px;
 	top: 0;
-	left: 0;
+	text-align: center;
 	z-index: 2000;
 	clear: both;
 	background: $blue;
-	border-bottom: 2px solid rgba($border1, 0.225);
+	border-bottom: 2px solid rgba($border1, 0.25);
 	ul {
-		display: none;
+		display: inline-block;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -33,20 +32,6 @@
 	}
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
 
 /* a simple ass grid */
 .grid_1 {
