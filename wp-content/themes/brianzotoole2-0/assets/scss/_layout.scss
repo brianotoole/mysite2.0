@@ -11,7 +11,7 @@
 	left: 0;
 	z-index: 2000;
 	clear: both;
-	background: $white;
+	background: $blue;
 	border-bottom: 2px solid rgba($border1, 0.225);
 	ul {
 		display: none;
@@ -20,14 +20,16 @@
 		padding-left: 0;
 	}
 	li {
-		float: left;
 		position: relative;
-		padding: 8px 15px;
+		float: right;
+		padding: 5px 15px;
 	}
 	a {
 		display: block;
 		text-decoration: none;
 		font-weight: 700;
+		font-size: 1.1em;
+		color: white;
 	}
 }
 
@@ -194,7 +196,7 @@
 			padding: 5px;
 		}
 		.skills {
-			font-size: 1.125em;
+			font-size: 1.5em;
 		}
 		.star {
 			&:after {
@@ -204,18 +206,19 @@
 		}
 	}
 	&.articles {
-		background: $white;
-		color: $black;
+		background: white;
+		color: $blue;
 		h2 {
 			color: $blue;
 		}
 		p.about {
-			font-size: 1.125em;
+			font-size: 1.5em;
+			text-align: center;
 		}
 		.star {
 			border-color: $blue;
 			&:after {
-				background: $white;
+				background: white;
 				color: $blue;
 			}
 		}
@@ -224,16 +227,16 @@
 		}
 	}
 	&.work {
-		background: white;
-		color: $black;
+		background: $gray;
+		color: white;
 		h2 {
-			color: $blue;
+			color: white;
 		}
 		.star {
-			border-color: $blue;
+			border-color: white;
 			&:after {
-				background: white;
-				color: $blue;
+				background: $gray;
+				color: white;
 			}
 		}
 	}
@@ -263,6 +266,7 @@
     margin-top: 0;
     margin-bottom: 5px;
 	text-align: left;
+	color: $gray;
 }
 .thumbnail {
 	background: transparent;
@@ -274,8 +278,8 @@
     -moz-transition: all .2s ease-out;
     -ms-transform: scale(1.05);
     &.default {
-    	background: $blue;
-    	opacity: 0.75;
+    	background: $gray;
+    	opacity: 0.9;
 		i {
 			position: absolute;
 			color: $white;
@@ -284,6 +288,7 @@
 		}
 		&:hover {
 			opacity: 1;
+			background: $blue;
 			transform: scale(1.05);
 			-webkit-transform: scale(1.05);
 			-moz-transform: scale(1.05);

@@ -2,8 +2,6 @@
 /**
  * Template part for displaying single posts.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
  * @package brianzotoole2.0
  */
 
@@ -20,16 +18,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'brianzotoole2-0' ),
-				'after'  => '</div>',
-			) );
-		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php brianzotoole2_0_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 

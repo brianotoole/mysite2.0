@@ -38,7 +38,7 @@
     <div class="grid_12">
 	  <h2 class="title">Let's Talk</h2>
 	  <hr class="star">
-	  <p>Need help on a project? Have an investment opportunity? Want to talk about an idea? Whatever it is, let's create something together. Shoot me an email or <a href="//twitter.com/brianotoole" target="_blank">tweet me</a>. Whichever you prefer, I'll do my best to get back to you asap.</p>
+	  <p>Need help on a project? Have an investment opportunity? Want to talk about an idea? Whatever it is, let's create something together. Shoot me an email by using the form below or <a href="//twitter.com/brianotoole" target="_blank">tweet me</a>. Whichever you prefer, I'll do my best to get back to you asap.</p>
 	  <?php echo do_shortcode('[contact-form-7 id="14" title="Let\'s Talk"]'); ?>
     </div><!--/.grid-->
   </div><!--/.container-->

@@ -36,3 +36,13 @@
 		} );
 	} );
 } )( jQuery );
+
+
+/* scroll to top */
+$(document).ready(function(){
+	//Click event to scroll to top
+	$('#top').click(function(){
+		$('html,body').animate({scrollTop : 0},400);
+		return false;
+	});
+});

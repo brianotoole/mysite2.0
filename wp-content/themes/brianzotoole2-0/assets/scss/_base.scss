@@ -191,13 +191,14 @@ input[type="password"],
 input[type="search"],
 textarea {
 	padding: 3px;
-	color: $black;
+	color: white;
 	border: 2px solid $border1;
 	border-radius: 3px;
 	background: transparent;
 	width: 100%;
+	height: 50px;
 	&:focus {
-		color: $blue;
+		border: 2px solid $peach;
 	}
 }
 textarea {
@@ -231,10 +232,15 @@ textarea {
 	&.blue {
 		background: transparent;
 		color: $blue;
-		border: 2px solid $blue;
+		border: 2px solid $gray;
 		&:hover {
 			background: white;
 			color: $blue;
 		}
+	}
+}
+.wpcf7-submit {
+	&:hover {
+		border-color: $peach;
 	}
 }
