@@ -175,14 +175,13 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid $black;
+	border: 2px solid $border1;
 	border-radius: 3px;
 	background: transparent;
-	color: rgba(0, 0, 0, .8);
-	font-size: 12px;
-	font-size: 0.75rem;
+	color: $white;
+	font-size: 1.125em;
 	line-height: 1;
-	padding: .6em 1em .4em;
+	padding: 14px 27px; /* .md */
 }
 
 input[type="text"],
@@ -193,8 +192,10 @@ input[type="search"],
 textarea {
 	padding: 3px;
 	color: $black;
-	border: 1px solid #ccc;
+	border: 2px solid $border1;
 	border-radius: 3px;
+	background: transparent;
+	width: 100%;
 	&:focus {
 		color: $blue;
 	}
