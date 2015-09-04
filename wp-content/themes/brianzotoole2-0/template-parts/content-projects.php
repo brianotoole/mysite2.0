@@ -17,7 +17,7 @@ if ( $loop->have_posts() ) {
 		$loop->the_post(); 
 		  ++$counter;
 		  if($counter == 3) { //if 3rd post add omega class
-		    $postclass = 'omega';
+		    $postclass = 'omega'; //adds margin-right: 0 for grid
 		    $counter = 0; //start counter over and loop again...
 		  } else { $postclass = ''; }
 		
@@ -28,7 +28,8 @@ if ( $loop->have_posts() ) {
 		    <a href="<?php the_permalink() ?>">
 		      <img src="<?php echo $image; ?>">
 		    </a>
-		    <a href="<?php the_permalink() ?>"><h4 class="post-title"><?php the_title(); ?></h4></a>
+		    <a href="<?php the_permalink() ?>"><h4 class="work-title"><?php the_title(); ?></h4></a>
+		 
 		    <?php the_excerpt('my_excerpt_length'); ?>
 		  <?php else: //if no featured image is uploaded, show default icon img ?>
 		  <?php endif; ?>

@@ -30,7 +30,7 @@
 		display: block;
 		text-decoration: none;
 		font-weight: 700;
-		font-size: 1.1em;
+		font-size: $md;
 		color: white;
 	}
 }
@@ -162,7 +162,7 @@
 		top: -.8em;
 		padding: 0 .25em;
 		font-family: Fontello;
-	    font-size: 2em;
+	    font-size: $xl + 0.5em;
 	    background: $white;
    }
 }
@@ -171,11 +171,13 @@
 --------------------------------------------------------------*/
 /* home */
 .slide {
+
 	//top section
 	&.about {
 		text-align: center;
 		background: $blue;
 		color: $white;
+		border-bottom: 4px solid darken($blue,5%);//darken bg color
 		img {
 			display: block;
 			margin: 125px auto auto;
@@ -185,7 +187,7 @@
 			padding: 5px;
 		}
 		.skills {
-			font-size: 1.5em;
+			font-size: $xl;
 		}
 		.star {
 			&:after {
@@ -194,15 +196,17 @@
 			}
 		}
 	}
+	
 	//articles section 
 	&.articles {
 		background: white;
 		color: $blue;
+		border-bottom: 4px solid darken($white,5%);//darken bg color
 		h2 {
 			color: $blue;
 		}
 		p.about {
-			font-size: 1.5em;
+			font-size: $xl;
 			text-align: center;
 		}
 		.star {
@@ -219,12 +223,17 @@
 			text-decoration: none;
 		}
 	}
+	
 	//work section
 	&.work {
 		background: $gray;
 		color: white;
+		border-bottom: 4px solid darken($gray,5%);//darken bg color
 		h2 {
 			color: white;
+		}
+		a {
+			text-decoration: none;
 		}
 		.star {
 			border-color: white;
@@ -233,20 +242,24 @@
 				color: white;
 			}
 		}
-		.projects {
-			img {
-				max-width: 95%;
-			}
-			.title {
-				color: white;
-			}
+		img {
+			max-width: 100%;
+			height: 180px;
+			padding: 5px;
+			background: white;
 		}
-
+		.work-title {
+			color: white;
+			margin: 0;
+			padding: 10px 0 0;
+		}
 	}
+	
 	//contact section
 	&.contact {
 		background: $blue;
 		color: white;
+		border-bottom: 4px solid darken($blue,5%);//darken bg color
 		h2 {
 			color: white;
 		}
@@ -260,8 +273,13 @@
 		a {
 			color: white;
 		}
+		p {
+			font-size: $md;
+		}
 	}
-	//single posts 
+/*--------------------------------------------------------------
+# Single & Entry-content
+--------------------------------------------------------------*/
 	&.single {
 		&.header {
 			padding: 125px 0 50px;
@@ -316,8 +334,8 @@
 		i {
 			position: absolute;
 			color: $white;
-			font-size: 1.475em;
-			margin: 15px;
+			font-size: $xl;
+			margin: 14px;
 		}
 		&:hover {
 			opacity: 1;
@@ -331,7 +349,9 @@
 }
 
 
-/* footer */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 .site-footer {
 	padding: 30px 0px;
 	text-align: center;
