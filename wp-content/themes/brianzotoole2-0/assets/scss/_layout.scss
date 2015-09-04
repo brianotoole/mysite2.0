@@ -264,6 +264,29 @@
 			color: white;
 		}
 	}
+	//single posts 
+	&.single {
+		&.header {
+			padding: 125px 0 50px;
+			background: $blue;
+			color: white;
+			.star {
+				border-color: white;
+				&:after {
+					background: $blue;
+					color: white;
+				}
+			}
+			.entry-date {
+				display: block;
+				text-align: center;
+			}
+		}
+		&.content {
+			background: white;
+			color: $black;
+		}
+	}
 }
 
 .title {

@@ -8,28 +8,28 @@
  */
 
 get_header(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div class="slide single header">
+  <div class="full clearfix">
+    <div class="grid_12">
+      <header class="entry-header">
+	    <?php the_title( '<h1 class="title">', '</h1>' ); ?>
+		<hr class="star">
+		<span class="entry-date"><?php echo get_the_date(); ?></span>
+	  </header><!-- .entry-header -->
+    
+    </div><!--/.grid-->
+  </div><!--/.container-->
+</div><!--/.slide-->
 
-		<?php while ( have_posts() ) : the_post(); ?>
-		<div class="full clearfix">
+<div class="slide single content">
+  <div class="full clearfix">
+    <div class="grid_12">
+	  <?php get_template_part( 'template-parts/content', 'single' ); ?>
+    </div><!--/.grid-->
+  </div><!--/.container-->
+</div><!--/.slide-->
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
-		</div>
-
-		<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+<?php endwhile; // End of the loop. ?>
 <?php get_footer(); ?>
