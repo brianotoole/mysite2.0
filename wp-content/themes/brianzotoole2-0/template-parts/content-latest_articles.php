@@ -12,9 +12,8 @@ $loop = new WP_Query( $args );
 if ( $loop->have_posts() ) {
 	while ( $loop->have_posts() ) {
 		$loop->the_post(); ?>
-		<div class="grid_11 entry-content">
+		<div class="grid_11">
 		  <a href="<?php the_permalink() ?>"><h4 class="post-title"><?php the_title(); ?></h4></a>
-		  <span class="entry-date"><?php echo get_the_date(); ?></span>
 		  <?php the_excerpt('my_excerpt_length'); ?>
 		</div><!--/.grid-->
 		<div class="grid_1 omega">

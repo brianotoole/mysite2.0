@@ -7,7 +7,7 @@ Version: 2.0.0
 Author: #
 */
 
-// Register Custom Post Type - "project_post_type"
+// Register Custom Post Type - "project"
 
 function project_post_type() {
 

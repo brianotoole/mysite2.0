@@ -233,6 +233,15 @@
 				color: white;
 			}
 		}
+		.projects {
+			img {
+				max-width: 95%;
+			}
+			.title {
+				color: white;
+			}
+		}
+
 	}
 	//contact section
 	&.contact {
@@ -320,6 +329,8 @@
 		}
     }
 }
+
+
 /* footer */
 .site-footer {
 	padding: 30px 0px;

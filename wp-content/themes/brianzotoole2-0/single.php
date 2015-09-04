@@ -16,7 +16,11 @@ get_header(); ?>
       <header class="entry-header">
 	    <?php the_title( '<h1 class="title">', '</h1>' ); ?>
 		<hr class="star">
-		<span class="entry-date"><?php echo get_the_date(); ?></span>
+		<?php if(is_singular( 'project' ) ) : ?>
+		  <span class="tags"><?php the_tags('Work involved: '); ?></span>
+		 <?php else : ?>
+		  <span class="entry-date"><?php echo get_the_date(); ?></span>
+		<?php endif; ?>
 	  </header><!-- .entry-header -->
     
     </div><!--/.grid-->

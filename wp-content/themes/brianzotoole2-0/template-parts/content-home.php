@@ -28,6 +28,7 @@
     <div class="grid_12">
 	  <h2 class="title">Recent Work</h2>
 	  <hr class="star">
+	  <?php get_template_part( 'template-parts/content', 'projects' ); ?>
     </div><!--/.grid-->
   </div><!--/.container-->
 </div><!--/.slide .work #slide3-->
