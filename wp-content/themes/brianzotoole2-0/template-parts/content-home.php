@@ -13,11 +13,9 @@
 <div class="slide articles" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
   <div class="full clearfix">
     <div class="grid_12">
-	  <h2 class="title">Learn With Me</h2>
+	  <h2 class="title">About Me</h2>
 	  <hr class="star">
 	  <p class="about">I am a digital projects director &amp; web developer located in Tampa, Florida. My skills range from web development to creative strategy. I enjoy using responsive techniques to build websites that provide a low-bandwidth and meaningful user experience.</p>
-	  <hr />
-	  <?php get_template_part( 'template-parts/content', 'latest_articles' ); ?>
     </div><!--/.grid-->
   </div><!--/.container-->
 </div><!--/.slide .articles #slide4-->
@@ -32,6 +30,18 @@
     </div><!--/.grid-->
   </div><!--/.container-->
 </div><!--/.slide .work #slide3-->
+
+<div class="slide articles" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+  <div class="full clearfix">
+    <div class="grid_12">
+	  <h2 class="title">Learn With Me</h2>
+	  <hr class="star">
+	  <p class="about">Sometimes I write about random things I learn. Here's a few of my recent articles.</p>
+	  <hr />
+	  <?php get_template_part( 'template-parts/content', 'latest_articles' ); ?>
+    </div><!--/.grid-->
+  </div><!--/.container-->
+</div><!--/.slide .articles #slide4-->
 
 
 <div class="slide contact" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">

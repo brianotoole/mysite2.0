@@ -220,9 +220,6 @@
 				color: $blue;
 			}
 		}
-		.omega {
-			margin: 30px 0;
-		}
 		a {
 			text-decoration: none;
 		}
@@ -346,6 +343,9 @@
 .entry-content {
 	.entry-date {
 		font-weight: 700;
+	}
+	p {
+		font-size: $md;
 	}
 }
 
