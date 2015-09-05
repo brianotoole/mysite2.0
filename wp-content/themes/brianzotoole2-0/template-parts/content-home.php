@@ -4,7 +4,7 @@
       <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/brianzotoole.jpg" class="animated bounceIn circle" alt="brian o'toole" />
 	  <h1 class="title">Brian Z. O'Toole</h1>
 	  <hr class="star">
-	  <p class="skills">Web Developer - Project Manager - Creative Strategist</p>
+	  <p class="skills">Web Developer <span>-</span> Project Manager <span>-</span> Creative Strategist</p>
     </div><!--/.grid-->
   </div><!--/.container-->
 </div><!--/.slide .about #slide1-->
