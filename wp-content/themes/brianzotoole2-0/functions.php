@@ -75,7 +75,7 @@ add_action( 'widgets_init', 'brianzotoole2_0_widgets_init' );
 function brianzotoole2_0_scripts() {
 	wp_enqueue_style( 'main', get_stylesheet_uri(), array(), '2.0');
 
-	//wp_enqueue_script( 'brianzotoole2-0-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'js', get_template_directory_uri() . '/js/main.js', array(), '2.0', true );
 
 	//if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	//	wp_enqueue_script( 'comment-reply' );

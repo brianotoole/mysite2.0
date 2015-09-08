@@ -329,6 +329,25 @@
 			border-bottom: 4px solid darken(white,2%);//darken bg color
 		}
 	}
+		&.articles-page {
+			&.content,
+			.post-title,
+			h2,
+			i {
+				color: white;
+			}
+			a {
+				text-decoration: none;
+			}
+		}
+		.tags {
+			display: block;
+			text-align: center;
+			a {
+				color: white;
+				padding: 0 2px;
+			}
+		}
 }
 
 .title {
