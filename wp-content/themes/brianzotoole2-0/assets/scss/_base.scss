@@ -240,8 +240,14 @@ textarea {
 		}
 	}
 }
+/*contact form 7 specific*/
 .wpcf7-submit {
 	&:hover {
 		border-color: $peach;
 	}
+}
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ok  {
+	color: $peach;
+	border: none;
 }

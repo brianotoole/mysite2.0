@@ -1,10 +1,19 @@
 <?php
 // Args
-$args = array (
-	'post_type'	     => array( 'post' ),
-	'order'			 => 'DESC',
-	'posts_per_page' => -1
-);
+if (is_page('home')) {
+	$args = array (
+		'post_type'	     => array( 'post' ),
+		'order'			 => 'DESC',
+		'posts_per_page' => 3
+	);
+} else {
+	$args = array (
+		'post_type'	     => array( 'post' ),
+		'order'			 => 'DESC',
+		'posts_per_page' => -1
+	);
+}
+
 // The Query
 $loop = new WP_Query( $args );
 
