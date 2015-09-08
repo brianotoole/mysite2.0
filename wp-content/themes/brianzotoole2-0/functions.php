@@ -76,6 +76,12 @@ function brianzotoole2_0_scripts() {
 	wp_enqueue_style( 'main', get_stylesheet_uri(), array(), '2.0');
 
 	wp_enqueue_script( 'js', get_template_directory_uri() . '/js/main.js', array(), '2.0', true );
+	
+	//show contact form 7 plugin scripts, only on contact & donate pages...
+	if (is_page('home')){
+        wpcf7_enqueue_scripts();
+        wpcf7_enqueue_styles();
+    }
 
 	//if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	//	wp_enqueue_script( 'comment-reply' );
