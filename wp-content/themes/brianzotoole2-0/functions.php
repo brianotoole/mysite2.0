@@ -75,7 +75,7 @@ add_action( 'widgets_init', 'brianzotoole2_0_widgets_init' );
 function brianzotoole2_0_scripts() {
 	wp_enqueue_style( 'main', get_stylesheet_uri(), array(), '2.0');
 
-	wp_enqueue_script( 'js', get_template_directory_uri() . '/js/main.js', array(), '2.0', true );
+	//wp_enqueue_script( 'js', get_template_directory_uri() . '/js/main.js', array(), '2.0', true );
 	
 	//show contact form 7 plugin scripts, only on contact & donate pages...
 	if (is_page('home')){
