@@ -30,7 +30,7 @@ if ( $loop->have_posts() ) {
 		    </a>
 		    <a href="<?php the_permalink() ?>"><h4 class="work-title"><?php the_title(); ?></h4></a>
 		    <?php the_tags( '<ul class="tags"><li>', '</li><li>', '</li></ul>' ); ?>
-		    <?php the_excerpt('my_excerpt_length'); ?>
+		    <a href="<?php the_permalink() ?>" class="more">View Project Details</a>
 		  <?php else: //if no featured image is uploaded, show default icon img ?>
 		  <?php endif; ?>
 		</div><!--/.grid-->

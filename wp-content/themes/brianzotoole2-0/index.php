@@ -14,16 +14,12 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
+<div class="slide single header articles-page">
+  <div class="full clearfix">
+    <div class="grid_12">
+      <header class="entry-header">
+	    <?php the_title( '<h2 class="title">', '</h2>' ); ?>
+			  <hr class="star">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>

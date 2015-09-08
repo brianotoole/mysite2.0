@@ -230,6 +230,7 @@
 		background: $gray;
 		color: white;
 		border-bottom: 4px solid darken($gray,2%);//darken bg color
+		text-align: center;
 		h2 {
 			color: white;
 		}
@@ -277,7 +278,17 @@
 					color: $white;
 				}
 			}
-
+		}
+		.more {
+			display: block;
+			margin: 5px 0 20px;
+			color: white;
+			&:after {
+				content: "\e806";
+				font-family: Fontello;
+				font-size: $sm;
+				padding-left: 5px;
+			}
 		}
 	}
 	

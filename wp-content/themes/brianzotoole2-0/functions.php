@@ -88,6 +88,11 @@ add_filter('excerpt_length', 'my_excerpt_length');
 function my_excerpt_length($length) {
 return 50; // words
 }
+// even shorter excerpt
+add_filter('excerpt_length_shorter', 'my_excerpt_length_shorter');
+function my_excerpt_length_shorter($length) {
+return 10; // words
+}
 // create linkable read more icon
 function new_excerpt_more( $more ) {
 	return '... <a class="more" href="'. get_permalink( get_the_ID() ) . '"> <i class="icon-right-dir"></i></a>';
