@@ -8,7 +8,10 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="A Projects Director & Web Developer living in Tampa, FL">
+<meta name="keywords" content="Tampa Website Design, Web Design Tampa, Web Development Tampa, Tampa website help, Web Designers in Tampa, Responsive Design Tampa">
 <?php wp_head(); ?>
 <script>
 //GA
