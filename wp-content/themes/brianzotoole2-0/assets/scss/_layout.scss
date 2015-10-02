@@ -379,8 +379,8 @@
 	p{
 		font-size: $md;
 	}
-	ul {
-		font-size: $md!important;
+	ul, ol {
+		font-size: $md;
 		margin: 0 0 20px 5px;
 	}
 }

@@ -450,7 +450,7 @@ embed, iframe, object { max-width: 100%; }
 
 .entry-content .entry-date { font-weight: 700; }
 .entry-content p { font-size: 1.15em; }
-.entry-content ul { font-size: 1.15em !important; margin: 0 0 20px 5px; }
+.entry-content ul, .entry-content ol { font-size: 1.15em; margin: 0 0 20px 5px; }
 
 .thumbnail { background: transparent; width: 60px; height: 60px; cursor: pointer; -webkit-transition: all .2s ease-out; transition: all .2s ease-out; }
 .thumbnail.default { background: #444; opacity: 0.9; }
