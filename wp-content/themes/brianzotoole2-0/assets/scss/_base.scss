@@ -99,14 +99,14 @@ big {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: $teal;
+	color: $main;
 	&:hover, &:focus, &:active {
-		color: darken($teal,5%);
+		color: darken($main,5%);
 		outline: 0;
 	}
 }
 a:visted {
-	color: $teal;
+	color: $main;
 }
 
 /*--------------------------------------------------------------
@@ -199,7 +199,7 @@ textarea {
 	height: 50px;
 	line-height: 50px;
 	&:focus {
-		border: 3px solid $gold;
+		border: 3px solid $accent;
 	}
 }
 textarea {
@@ -232,22 +232,22 @@ textarea {
 	}
 	&.teal {
 		background: transparent;
-		color: $teal;
-		border: 2px solid $teal;
+		color: $main;
+		border: 2px solid $main;
 		&:hover {
-			color: darken($teal,1%);
-			border-color: $gold;
+			color: darken($main,1%);
+			border-color: $accent;
 		}
 	}
 }
 /*contact form 7 specific*/
 .wpcf7-submit {
 	&:hover {
-		border-color: $gold;
+		border-color: $accent;
 	}
 }
 div.wpcf7-validation-errors,
 div.wpcf7-mail-sent-ok  {
-	color: $gold;
+	color: $accent;
 	border: none;
 }

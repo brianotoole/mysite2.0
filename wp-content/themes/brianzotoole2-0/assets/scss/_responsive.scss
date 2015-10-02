@@ -17,9 +17,16 @@
 	.thumbnail.default {
 		display: none;
 	}
-	.slide.work img {
-		width: auto;
-		height: auto;	
+	.slide.work {
+		img {
+			width: auto;
+			height: auto;	
+		}
+		ul.tags,
+		.work-title {
+			max-width: 100%;
+			width: auto;
+		}
 	}
     .hidden-xs {
         display: none;

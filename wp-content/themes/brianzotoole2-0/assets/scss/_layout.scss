@@ -10,7 +10,7 @@
 	text-align: center;
 	z-index: 2000;
 	clear: both;
-	background: $teal;
+	background: $main;
 	box-shadow: 0 0 3px rgba($border1, 0.25);
 
 	ul {
@@ -150,7 +150,7 @@
     border-top: solid 5px;
     border-color: $white;
     text-align: center;
-    color: $gold;
+    color: $accent;
     &:after {
 		content: "\e805";
 		display: inline-block;
@@ -171,9 +171,9 @@
 	//top section
 	&.about {
 		text-align: center;
-		background: $teal;
+		background: $main;
 		color: $white;
-		border-bottom: 4px solid darken($teal,2%);//darken bg color
+		border-bottom: 4px solid darken($main,2%);//darken bg color
 		img {
 			display: block;
 			margin: 125px auto auto;
@@ -185,12 +185,12 @@
 			font-size: $xl;
 			color: $white;
 			span {
-				color: $gold;
+				color: $accent;
 			}
 		}
 		.star {
 			&:after {
-				background: $teal;
+				background: $main;
 				color: $white;
 			}
 		}
@@ -199,13 +199,13 @@
 	//articles section 
 	&.articles {
 		background: white;
-		color: $teal;
+		color: $main;
 		border-bottom: 4px solid darken($white,2%);//darken bg color
 		h2 {
-			color: $teal;
+			color: $main;
 		}
 		.post-title {
-			color: $teal;
+			color: $main;
 		}
 		p.about {
 			font-size: $xl;
@@ -215,7 +215,7 @@
 			font-size: $md;
 		}
 		.star {
-			border-color: $teal;
+			border-color: $main;
 			&:after {
 				background: white;
 			}
@@ -245,6 +245,7 @@
 			border-color: white;
 			&:after {
 				background: $gray;
+				color: white;
 
 			}
 		}
@@ -257,13 +258,13 @@
 		}
 		.work-title {
 			color: white;
-			margin: 0;
+			margin: 0 auto;
 			padding: 5px 0 2px;
 			border-bottom: 2px solid darken($white,2%);//darken bg color
-			width: 92%;
+			max-width: 92%;
 		}
 		ul.tags {
-			margin: 0;
+			margin: 0 auto;
 			padding: 2px 0 5px;
 			list-style: none;
 			border-bottom: 2px solid darken($white,2%);//darken bg color
@@ -274,7 +275,7 @@
 				font-size: $sm;
 				&:after {
 					content: ' -';
-					color: $gold;
+					color: $accent;
 				}
 				&:last-child:after {
 					content: '';
@@ -300,7 +301,7 @@
 	
 	//contact section
 	&.contact {
-		background: $teal;
+		background: $main;
 		color: white;
 		border-bottom: 4px solid darken($white,2%);//darken bg color
 		h2 {
@@ -309,7 +310,7 @@
 		.star {
 			border-color: white;
 			&:after {
-				background: $teal;
+				background: $main;
 				color: white;
 			}
 		}
@@ -326,12 +327,12 @@
 	&.single {
 		&.header {
 			padding: 125px 0 50px;
-			background: $teal;
+			background: $main;
 			color: white;
 			.star {
 				border-color: white;
 				&:after {
-					background: $teal;
+					background: $main;
 					color: white;
 				}
 			}
@@ -407,7 +408,7 @@
 		}
 		&:hover {
 			opacity: 1;
-			background: $teal;
+			background: $main;
 			transform: scale(1.05);
 			-webkit-transform: scale(1.05);
 			-moz-transform: scale(1.05);
