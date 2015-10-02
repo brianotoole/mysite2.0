@@ -32,6 +32,7 @@ jQuery(function() {
   });
 });
 </script>
+<script data-no-instant>InstantClick.init();</script>
 
 </body>
 </html>
