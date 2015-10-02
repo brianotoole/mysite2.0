@@ -255,14 +255,14 @@
 			color: $teal;
 			margin: 0;
 			padding: 5px 0 2px;
-			border-bottom: 2px solid lighten($gray,2%);
+			border-bottom: 4px solid darken($white,2%);//darken bg color
 			width: 92%;
 		}
 		ul.tags {
 			margin: 0;
 			padding: 2px 0 5px;
 			list-style: none;
-			border-bottom: 2px solid lighten($gray,2%);
+			border-bottom: 2px solid darken($white,2%);//darken bg color
 			width: 92%;
 			li {
 				display: inline-block;
@@ -276,7 +276,7 @@
 					content: '';
 				}
 				a {
-					color: $white;
+					color: $gold;
 				}
 			}
 		}
@@ -379,7 +379,7 @@
 		font-size: $md;
 	}
 	ul {
-		font-size: $md;
+		font-size: $md!important;
 		margin: 0 0 20px 5px;
 	}
 }
