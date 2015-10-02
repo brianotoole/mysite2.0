@@ -3,7 +3,12 @@
 @media screen and (max-width: 1170px) {}//end
 
 @media screen and (min-width: 768px) {}//end
-
+    .hidden-xs {
+        display: block;
+    }
+    .visible-xs {
+        display: none;	
+    }
 @media screen and (max-width: 768px) {
 
 	.button, .wpcf7-submit {
@@ -13,9 +18,14 @@
 		display: none;
 	}
 	.slide.work img {
-		height: auto;
-		
+		height: auto;	
 	}
+    .hidden-xs {
+        display: none;
+    }
+    .visible-xs {
+        display: block;	
+    }
 }//end
 
 @media  screen and (max-width: 480px) {

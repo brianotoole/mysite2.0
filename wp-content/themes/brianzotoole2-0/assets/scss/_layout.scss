@@ -228,12 +228,12 @@
 	
 	//work section
 	&.work {
-		background: white;
-		color: $teal;
+		background: $gray;
+		color: white;
 		border-bottom: 4px solid darken($white,2%);//darken bg color
 		text-align: center;
 		h2 {
-			color: $teal;
+			color: white;
 		}
 		a {
 			text-decoration: none;
@@ -241,9 +241,12 @@
 		.star {
 			border-color: $teal;
 			&:after {
-				background: white;
+				background: $gray;
 
 			}
+		}
+		hr {
+			background-color: $teal;
 		}
 		img {
 			max-width: 100%;
@@ -252,7 +255,7 @@
 			background: white;
 		}
 		.work-title {
-			color: $teal;
+			color: white;
 			margin: 0;
 			padding: 5px 0 2px;
 			border-bottom: 2px solid darken($white,2%);//darken bg color
