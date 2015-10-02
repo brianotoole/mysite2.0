@@ -239,14 +239,14 @@
 		}
 		.star {
 			margin-bottom: 50px;
-			border-color: $teal;
+			border-color: white;
 			&:after {
 				background: $gray;
 
 			}
 		}
 		hr {
-			background-color: $teal;
+			background-color: white; //same as .star border-color for this section
 		}
 		img {
 			max-width: 100%;
