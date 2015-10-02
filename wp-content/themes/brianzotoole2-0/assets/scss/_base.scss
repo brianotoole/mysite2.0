@@ -125,7 +125,7 @@ q {
 }
 
 hr {
-	background-color: darken($white,2%);//darken bg color
+	background-color: rgba($hr,0.80);
 	border: 0;
 	height: 4px;
 	margin-bottom: 1.5em;

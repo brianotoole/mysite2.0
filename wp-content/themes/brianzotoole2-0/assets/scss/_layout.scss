@@ -223,6 +223,9 @@
 		a {
 			text-decoration: none;
 		}
+		hr {
+		    background-color: darken($hr,2%);
+		}
 	}
 	
 	//work section
