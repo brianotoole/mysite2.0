@@ -10,11 +10,9 @@
 	text-align: center;
 	z-index: 2000;
 	clear: both;
-	background: $blue;
+	background: $teal;
 	box-shadow: 0 0 3px rgba($border1, 0.25);
-	-webkit-box-shadow: 0 0 3px rgba($border1, 0.25);
-	-moz-box-shadow: 0 0 3px rgba($border1, 0.25);
-	-ms-box-shadow: 0 0 3px rgba($border1, 0.25);
+
 	ul {
 		display: inline-block;
 		list-style: none;
@@ -143,8 +141,6 @@
 --------------------------------------------------------------*/
 .circle {
 	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
 }
 .star {
 	margin: 30px auto;
@@ -154,7 +150,7 @@
     border-top: solid 5px;
     border-color: $white;
     text-align: center;
-    color: $blue;
+    color: $gold;
     &:after {
 		content: "\e805";
 		display: inline-block;
@@ -175,9 +171,9 @@
 	//top section
 	&.about {
 		text-align: center;
-		background: $blue;
+		background: $teal;
 		color: $white;
-		border-bottom: 4px solid darken($blue,2%);//darken bg color
+		border-bottom: 4px solid darken($teal,2%);//darken bg color
 		img {
 			display: block;
 			margin: 125px auto auto;
@@ -190,12 +186,12 @@
 			font-size: $xl;
 			color: $white;
 			span {
-				color: $peach;
+				color: $gold;
 			}
 		}
 		.star {
 			&:after {
-				background: $blue;
+				background: $teal;
 				color: $white;
 			}
 		}
@@ -204,20 +200,25 @@
 	//articles section 
 	&.articles {
 		background: white;
-		color: $blue;
+		color: $teal;
 		border-bottom: 4px solid darken($white,2%);//darken bg color
 		h2 {
-			color: $blue;
+			color: $teal;
+		}
+		.post-title {
+			color: $teal;
 		}
 		p.about {
 			font-size: $xl;
 			text-align: center;
 		}
+		p {
+			font-size: $md;
+		}
 		.star {
-			border-color: $blue;
+			border-color: $teal;
 			&:after {
 				background: white;
-				color: $blue;
 			}
 		}
 		a {
@@ -227,21 +228,21 @@
 	
 	//work section
 	&.work {
-		background: $gray;
-		color: white;
-		border-bottom: 4px solid darken($gray,2%);//darken bg color
+		background: white;
+		color: $teal;
+		border-bottom: 4px solid darken($white,2%);//darken bg color
 		text-align: center;
 		h2 {
-			color: white;
+			color: $teal;
 		}
 		a {
 			text-decoration: none;
 		}
 		.star {
-			border-color: white;
+			border-color: $teal;
 			&:after {
-				background: $gray;
-				color: white;
+				background: white;
+
 			}
 		}
 		img {
@@ -251,7 +252,7 @@
 			background: white;
 		}
 		.work-title {
-			color: white;
+			color: $teal;
 			margin: 0;
 			padding: 5px 0 2px;
 			border-bottom: 2px solid lighten($gray,2%);
@@ -269,7 +270,7 @@
 				font-size: $sm;
 				&:after {
 					content: ' -';
-					color: $peach;
+					color: $gold;
 				}
 				&:last-child:after {
 					content: '';
@@ -294,16 +295,16 @@
 	
 	//contact section
 	&.contact {
-		background: $blue;
+		background: $teal;
 		color: white;
-		border-bottom: 4px solid darken($blue,2%);//darken bg color
+		border-bottom: 4px solid darken($white,2%);//darken bg color
 		h2 {
 			color: white;
 		}
 		.star {
 			border-color: white;
 			&:after {
-				background: $blue;
+				background: $teal;
 				color: white;
 			}
 		}
@@ -320,12 +321,12 @@
 	&.single {
 		&.header {
 			padding: 125px 0 50px;
-			background: $blue;
+			background: $teal;
 			color: white;
 			.star {
 				border-color: white;
 				&:after {
-					background: $blue;
+					background: $teal;
 					color: white;
 				}
 			}
@@ -374,8 +375,12 @@
 	.entry-date {
 		font-weight: 700;
 	}
-	p {
+	p{
 		font-size: $md;
+	}
+	ul {
+		font-size: $md;
+		margin: 0 0 20px 5px;
 	}
 }
 
@@ -385,9 +390,7 @@
 	height: 60px;
 	cursor: pointer;
     transition: all .2s ease-out;
-    -webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -ms-transform: scale(1.05);
+    
     &.default {
     	background: $gray;
     	opacity: 0.9;
@@ -399,7 +402,7 @@
 		}
 		&:hover {
 			opacity: 1;
-			background: $blue;
+			background: $teal;
 			transform: scale(1.05);
 			-webkit-transform: scale(1.05);
 			-moz-transform: scale(1.05);

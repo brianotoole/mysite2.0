@@ -20,16 +20,14 @@
 
 @media  screen and (max-width: 480px) {
   body {
-	  font-size: 0.90em;
+	  font-size: 0.9em;
   }
   .main-navigation {
+      li {
+	      padding: 10px 15px;
+	  }
       a {
-      	font-size: $sm!important;
-	      
-	      li {
-		  	padding: 10px 15px;
-	      }
-	      
+      	  font-size: 1em; 
 	  }
   }
   .grid_1,.grid_10,.grid_11,.grid_12,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9 {

@@ -38,7 +38,7 @@ $count_posts = wp_count_posts();
 $published_posts = $count_posts->publish;
   if (is_page('home') && ( $published_posts >= 3 )) {
     echo '<div class="col-sm-12 text-center no-padding">';
-	echo '<a href="' . get_option('home') . '/articles" class="button md blue omega">' . 'View More Articles' . '</a>';
+	echo '<a href="' . get_option('home') . '/articles" class="button md teal omega">' . 'View More Articles' . '</a>';
 	echo '</div>'; 
   }
 ?>
