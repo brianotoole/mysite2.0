@@ -15,7 +15,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script data-no-instant>InstantClick.init();</script>
 <script>
 jQuery(function() {
   jQuery('a[href*=#]:not([href=#])').click(function() {
@@ -32,7 +32,6 @@ jQuery(function() {
   });
 });
 </script>
-<script data-no-instant>InstantClick.init();</script>
 
 </body>
 </html>
