@@ -14,10 +14,10 @@ $md: 1.15em;
 $sm: 0.85em;
 
 // Typography
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
 
-$font-heading: 'Montserrat', serif, Helvetica;
-$font-body: 'Lato', Verdana, Arial;
+$font-heading: 'Oswald', serif, Helvetica;
+$font-body: 'Roboto', Verdana, Arial;
 
 @import "reset";
 @import "fontello";
