@@ -17,12 +17,12 @@ if ( $loop->have_posts() ) {
 		$loop->the_post(); 
 		  ++$counter;
 		  if($counter == 3) { //if 3rd post add omega class
-		    $postclass = 'omega'; //adds margin-right: 0 for grid
+		    $postclass = 'last'; //adds margin-right: 0 for grid
 		    $counter = 0; //start counter over and loop again...
 		  } else { $postclass = ''; }
 		
 		?>
-		<div class="grid_4 work <?php echo $postclass; ?>">
+		<div class="item work <?php echo $postclass; ?>">
 		<?php if (has_post_thumbnail( $post->ID ) ): //if featured image is uploaded... ?>
 				  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); $image = $image[0]; ?>
 		    <a href="<?php the_permalink() ?>">
