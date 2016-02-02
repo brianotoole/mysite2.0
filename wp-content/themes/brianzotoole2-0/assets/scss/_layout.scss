@@ -194,7 +194,7 @@
 			padding: 1px;
 		}
 		.skills {
-			font-size: $xl;
+			font-size: $lg;
 			color: $white;
 			span {
 				color: $accent;
@@ -222,9 +222,6 @@
 		p.about {
 			font-size: $xl;
 			text-align: center;
-		}
-		p {
-			font-size: $md;
 		}
 		.star {
 			border-color: $main;
@@ -389,12 +386,10 @@
 	color: $gray;
 }
 .entry-content {
+
 	.entry-date {}
-	p{
-		font-size: $md;
-	}
+
 	ul, ol {
-		font-size: $md;
 		margin: 10px 0 20px 5px;
 	}
 }
