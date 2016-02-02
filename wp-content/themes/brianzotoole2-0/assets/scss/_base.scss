@@ -7,7 +7,8 @@ html {
 	box-sizing: border-box;
 }
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background: #fff; 
+	font-weight: 300;
 }
 body,
 button,
@@ -31,6 +32,7 @@ h5,
 h6 {
 	clear: both;
 	font-family: $font-heading;
+	font-weight: 300;
 }
 h1 { font-size: 2.2em; }
 h2 { font-size: 2em; }
