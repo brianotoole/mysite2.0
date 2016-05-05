@@ -7,7 +7,7 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 80px;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -15,6 +15,7 @@
 	z-index: 2000;
 	@media (max-width: 768px) {
 		flex-direction: column; //stack-items
+		width: 100%;
 		height: auto;
 	}
 
@@ -27,7 +28,6 @@
 	}
 	
 	.site-branding {
-		span,
 		span a {
 		    font-family: $font-logo;
 		    font-size: $md;
@@ -35,6 +35,16 @@
 		    color: $black;
 		    text-decoration: none;
 		    span { color: $main;}
+		    &:before {
+			    content: '';
+			    position: absolute;
+			    background: url('assets/img/brianzotoole.jpg') 0 0 no-repeat;
+			    background-size: 100%;
+			    width: 20px;
+			    height: 19px;
+			    top: 29px;
+			    left: -23px;
+		    }
 		}
 	}
 
