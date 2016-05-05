@@ -29,6 +29,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/bg_code.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 119732,
+		"inputAbbreviatedPath": "\/assets\/img\/bg_code.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/bg_code.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/brianzotoole-blue.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

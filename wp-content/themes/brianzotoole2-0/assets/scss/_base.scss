@@ -212,14 +212,23 @@ textarea {
 .button {
 	display: block;
     margin: 0 auto;
-    width: 25%;
+    width: 250px;
     text-align: center;
 	margin-top: 15px;
 	border-radius: 5px;
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+	text-decoration: none;
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
+	&:hover {
+	    background-color: $accent;
+	    color: darken(white,1%);
+	    border-color: darken(white,1%);
+	}
 	&.lg{
 	    padding: 18px 27px;
 	    font-size: 1.125em;
@@ -232,13 +241,13 @@ textarea {
 	    padding: 10px 27px;
 	    font-size: 1em;
 	}
-	&.teal {
-		background: transparent;
+	&.main {
+		background-color: $main;
 		color: $main;
-		border: 2px solid $main;
+		border-color: $main;
 		&:hover {
 			color: darken($main,1%);
-			border-color: $accent;
+			border-color: darken($main,1%);
 		}
 	}
 }

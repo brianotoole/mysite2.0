@@ -1,10 +1,12 @@
 <div class="slide about" id="slide1">
   <div class="full clearfix">
-    <div class="grid_12">
-      <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/brianzotoole.jpg" class="circle" alt="brian o'toole" />
-	  <p class="hidden-xs skills">Web Developer <span>-</span> Project Manager <span>-</span> Creative Strategist</p>
-	  <p class="visible-xs skills">Web Developer <br />Project Manager <br /> Creative Strategist</p>
+    <div class="grid_12 text-center">
+     <!-- <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/brianzotoole.jpg" class="visible-sm circle" alt="brian o'toole" /> -->
+	  <!-- <p class="hidden-xs skills">Web Developer <span>-</span> Project Manager <span>-</span> Creative Strategist</p>
+	  <p class="visible-xs skills">Web Developer <br />Project Manager <br /> Creative Strategist</p> -->
+	  <h1>"Adapt. Or die."</h1>
 	  <p class="about">My name is Brian O'Toole and I am a director of web development living in Tampa, Florida. I help brands build recognition using the latest in web development and creative strategy. I enjoy using responsive techniques to build websites that provide a low-bandwidth and meaningful user experience.</p>
+	  <a href="/services" class="button sm">Learn More</a>
     </div><!--/.grid-->
   </div><!--/.container-->
 </div><!--/.slide .about #slide1-->

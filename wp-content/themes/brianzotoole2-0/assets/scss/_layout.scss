@@ -215,6 +215,7 @@
 	    background: $white;
    }
 }
+.text-center { text-align: center; }
 /*--------------------------------------------------------------
 # Templates
 --------------------------------------------------------------*/
@@ -223,10 +224,21 @@
 
 	//top section
 	&.about {
-		text-align: center;
-		background-color: $main;
+	    height: 500px;
+	    @media (min-width: 768px) {
+	        padding-top: 100px;
+	    }
+		background: linear-gradient($main, rgba($main, 0.9)), url('assets/img/bg_code.jpg');
+		background-size: 100%;
 		color: $white;
 		border-bottom: 4px solid darken($main,2%);//darken bg color
+		
+		.button {
+			@media (min-width: 768px) {
+		        margin: 60px auto;
+		    }
+		}
+
 		img {
 			display: block;
 			margin: 125px auto auto;
