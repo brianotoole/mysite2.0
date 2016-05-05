@@ -27,7 +27,15 @@
 	}
 	
 	.site-branding {
-		font-size: $md;
+		span,
+		span a {
+		    font-family: $font-logo;
+		    font-size: $lg;
+		    font-weight: 400;
+		    color: $black;
+		    text-decoration: none;
+		    span { color: $main;}
+		}
 	}
 
 	.site-navigation {
@@ -234,7 +242,7 @@
 	//articles section 
 	&.articles {
 		background: white;
-		color: $main;
+		color: $black;
 		border-bottom: 4px solid darken($white,2%);//darken bg color
 		h2 {
 			color: $main;

@@ -19,11 +19,10 @@
 
 <header class="site-header">
   <div class="site-branding">
-    <span>Brian Z. O'Toole</span>
+    <span><a href="<?php echo bloginfo('url') ?>">Brian <span>Z.</span> O'Toole</a></span>
   </div><!--/.site-branding-->
   <nav class="site-navigation" role="navigation">
     <ul>
-      <!--<li><a href="<?php bloginfo('url'); ?>/#about">About</a></li>-->
       <li><a href="<?php bloginfo('url'); ?>/#projects">Projects</a></li>
       <li><a href="<?php bloginfo('url'); ?>/#articles">Articles</a></li>
       <li><a href="<?php bloginfo('url'); ?>/#chat">Chat</a></li>

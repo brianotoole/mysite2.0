@@ -33,10 +33,9 @@
           //default
 	  }
 	  
-	  &.design,
-	  &.taller {
+	  /*&.taller {
 		  height: 475px; //taller
-	  }
+	  }*/
 	  &.design,
 	  &.development,
 	  &.creative-strategy,
@@ -84,7 +83,7 @@
 			  left: 50%;
 			  right: 50%;
 			  top: 0;
-			  background-color: $main;
+			  background-color: $accent;
 			  height: 4px;
 			  transition-property: left,right;
 			  transition-duration: 0.5s;
@@ -169,7 +168,7 @@
 				width: 100%;
 				left: 0;
 				right: 0;
-				background-color: $main;
+				background-color: $accent;
 				z-index: -1;
 				position: absolute;
 				bottom: -1px;
@@ -181,7 +180,7 @@
 		
 	}
 .is-checked {
-    color: $main;
+    color: $accent;
 	&::after {
 	    content: '';
 	    opacity: 1;
@@ -189,7 +188,7 @@
 		width: 100%;
 		left: 0;
 		right: 0;
-		background-color: $main;
+		background-color: $accent;
 		position: absolute;
 		bottom: -1px;
 		left: 0;
