@@ -1,8 +1,9 @@
-// Colors
-$main: #35526B; //blue
-$accent: #D7A22A; //light gold
-$black: #323231; //text on light bg
-$white: #f5f5f5; //text on dark bg
+// Colors; inherited from: https://www.google.com/design/spec/style/color.html#color-color-palette
+$main: #00897B; //teal #600
+$accent: #B2DFDB; //teal #100
+
+$black: #424242; //grey #800
+$white: #f5f5f5;
 $gray: #252525;
 $border1: #D6D6D6;
 $hr: #f3f3f3;
@@ -25,4 +26,5 @@ $font-body: 'Merriweather', Verdana, Arial;
 @import "base";
 @import "wp";
 @import "layout";
+@import "projects";
 @import "responsive";

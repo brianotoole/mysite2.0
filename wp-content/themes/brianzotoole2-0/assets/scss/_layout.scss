@@ -262,22 +262,22 @@
 	
 	//work section
 	&.work {
-		background: $black;
-		color: white;
+		background: white;
+		color: $black;
 		border-bottom: 4px solid darken($white,2%);//darken bg color
 		text-align: center;
 		h2 {
-			color: white;
+			color: $black;
 		}
 		a {
 			text-decoration: none;
 		}
 		.star {
 			margin-bottom: 50px;
-			border-color: white;
+			border-color: $main;
 			&:after {
-				background: $black;
-				color: white;
+				background: white;
+				color: $accent;
 
 			}
 		}
@@ -289,7 +289,7 @@
 			background: white;
 		}
 		.work-title {
-			color: white;
+			color: $black;
 			margin: 0 auto;
 			padding: 5px 0 2px;
 			border-bottom: 2px solid darken($white,2%);//darken bg color
@@ -313,7 +313,7 @@
 					content: '';
 				}
 				a {
-					color: white;
+					color: $black;
 				}
 			}
 		}

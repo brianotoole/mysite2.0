@@ -1,0 +1,187 @@
+// Portfolio part + page styles
+
+.page-portfolio { }
+
+.masonry-grid {
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    transition-property: height, width;
+    
+    &:after { //clearfix
+	  content: '';
+	  display: block;
+	  clear: both;
+  }
+  
+  .item {
+	  float: left;
+	  width: calc( ( 100% - 30px ) / 3 ); //== 1/3 column minus 2 gutters of 15px
+	  height: 350px;
+	  margin: 0;
+	  background-color: white;
+	  border: 1px solid lighten($border1,18%);
+	  box-shadow: rgba($border1, 0.1) 0 0 8px 0;
+      z-index: 2;
+
+	  // item categories == sizes + filterable options
+	  &.design,
+	  &.development,
+	  &.creative-strategy,
+	  &.project-management {
+          //default
+	  }
+	  
+	  &.design,
+	  &.taller {
+		  height: 475px; //taller
+	  }
+	  &.design,
+	  &.development,
+	  &.creative-strategy,
+	  &.project-management,
+	  &.default,
+	  &.taller {
+	    @media (max-width: 768px) {
+          width: 100%;
+          height: 150px;      
+	    }
+	  }
+	  
+	  .item-bg {
+		  width: auto;
+		  height: 100%;
+		  background-size: cover;
+		  background-position: center center;
+		  background-repeat: no-repeat;
+		  opacity: 1;
+		  
+		  @media (max-width: 768px) {
+		      background-size: 100%;
+		      background-position: 100%;
+		  }
+		  
+		  .item-overlay {
+			  width: 100%;
+			  height: 100%;
+			  opacity: 0;
+			  transform: translateZ(0);
+			  transition: 0.5s opacity ease-out;
+			  @media (max-width: 768px) {
+			      opacity: 0.99;
+			  }
+			  &:hover {
+				  opacity: 1;
+			  }
+		  }
+		  // outline from center hover effect
+		  .item-overlay:before {
+			  content: '';
+			  position: absolute;
+			  z-index: -1;
+			  left: 50%;
+			  right: 50%;
+			  top: 0;
+			  background-color: $main;
+			  height: 4px;
+			  transition-property: left,right;
+			  transition-duration: 0.5s;
+			  transition-timing-function: ease-out;
+			}
+			.item-overlay:hover:before, 
+			.item-overlay:focus:before, 
+			.item-overlay:active:before {
+			  left: 0;
+			  right: 0;
+			}
+
+
+		  .item-caption {
+		      position: absolute;
+		      top: 0;
+			  width: 100%;
+			  height: auto;
+			  padding: 15px 25px;
+			  text-align: left;
+			  @media (max-width: 768px) {
+			      height: 100%;
+			  }
+		  }
+		  .item-title,
+		  .item-view {
+			  position: relative;
+		      width: 100%;
+		      font-weight: 700;
+		      color: white;
+		  }
+		  .item-title {}
+		  .item-view {
+			  font-size: 1.1em;
+			  i { font-size: 0.85em; }
+		  }
+	  }
+  
+  }
+ 
+}
+
+.masonry-grid,
+.masonry-grid .item {
+    transition-duration: 0.3s;
+    backface-visibility: hidden;
+}
+
+
+// Filters
+.filter-container {
+	
+	ul {
+		margin: 30px 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+		
+		li {
+			display: inline;
+		}
+		
+		li a {
+			padding: 10px;
+			position: relative;
+			z-index: 1;
+			color: $accent;
+			font-weight: 700;
+			display: inline-block;
+			transition: background 0.3s 0.3s, color 0.3s;
+			
+			&:hover {
+				color: white;
+				
+				&::before {
+					transform: scale(1) skew(0);
+					background-color: $accent;
+				}
+			}
+			
+			&::before {
+				content: '';
+				height: 100%;
+				width: 100%;
+				background-color: transparent;
+				z-index: -1;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: scale(0.2) skew(-10deg);
+				transition: transform 0.3s, background 0.5s;
+			}
+		}
+		
+		.is-checked {
+			background: $accent;
+			color: white;
+		}
+	}
+	
+}
