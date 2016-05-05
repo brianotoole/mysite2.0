@@ -14,9 +14,7 @@
   <div class="full clearfix">
     <h2 class="title">Recent Projects</h2>
       <hr class="star">
-        <div class="flex-grid">
-	      <?php get_template_part( 'template-parts/content', 'projects-masonry' ); ?>
-        </div><!--/.flex-grid-->
+	    <?php get_template_part( 'template-parts/content', 'projects-masonry' ); ?>
     </div><!--/.container-->
 </div><!--/.slide .work #slide3-->
 

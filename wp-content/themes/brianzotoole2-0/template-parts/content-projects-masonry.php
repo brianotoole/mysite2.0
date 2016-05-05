@@ -4,7 +4,7 @@
 <!-- Filters --> 
 <div class="filter-container" id="filters">
   <ul>
-	<li><a href="#" data-filter=".item" class="is-checked"><i class="fa fa-th"></i> All</a></li>
+	<li><a href="#" data-filter=".item" class="is-checked"><i class="fa fa-th"></i> All Projects</a></li>
 	<li><a href="#" data-filter=".development"><i class="fa fa-file-o"></i> Development</a></li>
 	<li><a href="#" data-filter=".design"><i class="fa fa-laptop"></i> Design</a></li>
 	<li><a href="#" data-filter=".creative-strategy"><i class="fa fa-newspaper-o"></i> Creative Strategy</a></li>
@@ -28,14 +28,14 @@ $query = new WP_Query($args);
 ?>
 <a class="item <?php echo $projectCategories; ?>" href="<?php the_permalink(); ?>">
   <div class="item-bg" style="background-image:url('<?php the_post_thumbnail_url(); ?>')">
-    <div class="item-overlay">
-      <div class="item-caption">
-        <p class="item-title"><strong>Project:</strong> <?php the_title(); ?></p>
-        <span class="item-view">View Project Details<i class="icon-right-dir" aria-hidden="true"></i></span> 
-      </div><!--/.item-caption-->
-	</div><!--/.item-overlay-->
+    <div class="item-overlay"></div>
   </div><!--/.item-bg-->
+  <div class="item-caption">
+    <p class="item-title"><strong>Project:</strong> <?php the_title(); ?></p>
+    <!--<span class="item-view">View Project Details<i class="icon-right-dir" aria-hidden="true"></i></span> -->
+  </div><!--/.item-caption-->
 </a>
+
 <?php endwhile; 
  wp_reset_postdata();
  else : 
@@ -61,7 +61,7 @@ $container.imagesLoaded(function() {
 	  masonry: {
 	    columnWidth: '.item',
         //rowHeight: '.item',
-		gutter: 15
+		gutter: 20
       }
   });
 });
