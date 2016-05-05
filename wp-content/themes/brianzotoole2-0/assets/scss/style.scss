@@ -16,10 +16,10 @@ $default: 1em;
 $sm: 0.85em;
 
 // Typography
-@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Gloria+Hallelujah:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato|Josefin+Sans|Gloria+Hallelujah:300,400,700');
 
 $font-heading: 'Lato', serif, Helvetica;
-$font-body: 'Merriweather', Verdana, Arial;
+$font-body: 'Josefin Sans', Verdana, Arial;
 $font-logo: 'Gloria Hallelujah', Helvetica, Sans-serif;
 
 @import "reset";

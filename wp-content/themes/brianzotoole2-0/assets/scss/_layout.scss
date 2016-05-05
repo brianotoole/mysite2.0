@@ -22,6 +22,7 @@
 	.site-branding,
 	.site-navigation {
 	    flex: 1 auto;
+	    font-family: $font-heading;
 	    @media (max-width: 768px) {
 		    margin: 10px 0;
 		}
@@ -237,6 +238,10 @@
 			@media (min-width: 768px) {
 		        margin: 60px auto;
 		    }
+		}
+		
+		.intro-text {
+			font-size: $lg;
 		}
 
 		img {
