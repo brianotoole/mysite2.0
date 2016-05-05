@@ -27,12 +27,11 @@ $query = new WP_Query($args);
 
 ?>
 <a class="item <?php echo $projectCategories; ?>" href="<?php the_permalink(); ?>">
-  <!--<div class="item-bg" style="background-image:url('<?php the_post_thumbnail_url(); ?>')">-->
-  <div class="item-bg" style="background-color:red;">
+  <div class="item-bg" style="background-image:url('<?php the_post_thumbnail_url(); ?>')">
     <div class="item-overlay">
       <div class="item-caption">
-        <h4 class="item-title"><?php the_title(); ?></h4>
-        <h6 class="item-view"><i class="fa fa-search-plus" aria-hidden="true"></i> View Project Details</h6> 
+        <p class="item-title"><strong>Project:</strong> <?php the_title(); ?></p>
+        <span class="item-view">View Project Details<i class="icon-right-dir" aria-hidden="true"></i></span> 
       </div><!--/.item-caption-->
 	</div><!--/.item-overlay-->
   </div><!--/.item-bg-->
@@ -49,6 +48,8 @@ $query = new WP_Query($args);
 <script>
 // Page Specific Scripts
 //Init isotope when images are loaded 
+jQuery(document).ready(function($) {
+
 var $container = $('#projects-masonry');
 
 if ($container.length) { //if lentgth is not 0 run...
@@ -69,8 +70,7 @@ $container.imagesLoaded(function() {
 //Filtering items
 $(document).on('click', '#filters a', function() {
   var selector = $(this).attr('data-filter');
-  $('#portfolio').isotope({ filter: selector });
-    reGroup();
+  $('#projects-masonry').isotope({ filter: selector });
     return false;
 });
     	 
@@ -78,15 +78,7 @@ $(document).on('click', '#filters a', function() {
 $('.filter-container ul li a').on('click', function () {
   $('.filter-container ul li a').removeClass('is-checked');
   $(this).addClass('is-checked');
-     
-    //make .video items 2 col versus 2/3 when .video filter is active
-    var videoCat = $('.masonry-grid .item.video');
-    if ($(this).hasClass('video') ) {
-        $(videoCat).addClass('js-two-col');
-    } else {
-	    $(videoCat).removeClass('js-two-col');
-    }
     
 }); 
-
+});//ready
 </script> 
