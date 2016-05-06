@@ -20,8 +20,8 @@ $color6: #68A982;
 .item {
     padding: 100px 0;
     flex: 1 33%; //flex-grow, flex-basis
-    //width: calc( ( 100% - 0 ) / 3 ); //== 1/4 column minus [gutter]
     width: 33%;
+    width: calc( ( 99% ) / 3 ); //== 1/3 column minus [gutter]
     height: 260px;
     text-align: center;
     box-sizing: border-box;
@@ -31,6 +31,17 @@ $color6: #68A982;
     transform: translateZ(0);
 	transition: 0.5s opacity ease-out;
 	z-index: 2001;
+	
+	@media (max-width: 1099px) {
+	    flex: 1 50%;
+	    width: 50%;
+        width: calc( ( 99% ) / 2 );
+	}
+	@media (max-width: 768px) {
+	    flex: 1 100%;
+	    width: 100%;
+	    height: 200px;
+	}
 	
     &:hover {
 	    opacity: 1;
@@ -53,13 +64,6 @@ $color6: #68A982;
 	    right: 0;
     }
     
-    @media (max-width: 768px) {
-	    flex: 1 35%;
-    }
-    
-    @media (max-width: 480px) {
-	    flex: 1 100%;
-    }
    
 }
 
@@ -89,8 +93,9 @@ $color6: #68A982;
 .item-caption {
 	width: 100%;
 	height: 100%;
-	@media (min-width: 768px) {
-	    padding-top: 110px;
+	padding-top: 110px;
+	@media (max-width: 768px) {
+	    padding-top: 75px;
 	}
 }
 
