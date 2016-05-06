@@ -1,26 +1,41 @@
-<div class="slide about" id="slide1">
+<div class="slide hero">
   <div class="full clearfix">
     <div class="grid_12 text-center">
      <!-- <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/brianzotoole.jpg" class="visible-sm circle" alt="brian o'toole" /> -->
 	  <!-- <p class="hidden-xs skills">Web Developer <span>-</span> Project Manager <span>-</span> Creative Strategist</p>
 	  <p class="visible-xs skills">Web Developer <br />Project Manager <br /> Creative Strategist</p> -->
-	  <h1 class="intro-title">"Adapt. Or die."</h1>
-	  <p class="intro-text">My name is Brian O'Toole and I am a director of web development living in Tampa, Florida. I help brands build recognition using the latest in web development and creative strategy. I enjoy using responsive techniques to build websites that provide a low-bandwidth and meaningful user experience.</p>
-	  <a href="/services" class="button sm">Learn More</a>
+	  <h1 class="intro-title"><strong>Simplicity and clarity.</strong> Great design has both.</h1>
+	  <p class="intro-text">My name is Brian O'Toole and I am a director of web development living in Tampa, Florida. I help brands build recognition using the latest in web development and creative strategy. I believe good design should provide a low-bandwidth, meaningful user experience.</p>
+	  <a href="#about" class="button sm">Learn More</a>
     </div><!--/.grid-->
   </div><!--/.container-->
 </div><!--/.slide .about #slide1-->
 
-
-<div class="slide work" id="projects" data-slide="3" data-stellar-background-ratio="0.5">
+<div class="slide about" id="about" data-slide="1" data-stellar-background-ratio="0.5">
   <div class="full clearfix">
-    <h2 class="title">Recent Projects</h2>
+    <div class="grid_12 text-center">
+      <h2 class="title">About Me</h2>
       <hr class="star">
-	    <?php get_template_part( 'template-parts/content', 'projects-masonry' ); ?>
-    </div><!--/.container-->
-</div><!--/.slide .work #slide3-->
+      <h4>I help businesses and&nbsp;startups capture&nbsp;brand recognition using modern technology and&nbsp;design.</h4>
+      <hr class="styled">
+      <h5>I have 12+ years of experience working with creative services and currently work at a full-service ad agency in Florida. I've worked with many talented teams of designers, developers, and entrepreneurs. All of whom have a deep understanding about the intuitions of brand marketing.</h5>
+      <hr class="styled">
+      <h6>I sincerely enjoy the work I do and my clients garner the benefits. I am located in Tampa, Florida and love working with clients all over the US... Oh, and <a href="http://bigcatcountry.com" target="_blank">Go Jaguars!</a></h6>
+    </div><!--/.grid-->
+  </div><!--/.container-->
+</div><!--/.slide .about #slide1-->
 
-<div class="slide articles" id="articles" data-slide="4" data-stellar-background-ratio="0.5">
+<div class="slide-full work" id="projects" data-slide="2" data-stellar-background-ratio="0.5">
+  <div class="full clearfix">
+    <div class="grid_12 text-center">
+      <h2 class="title">Recent Projects</h2>
+      <hr class="star">
+    </div><!--/.grid-->
+  </div><!--/.full-->
+  <?php get_template_part( 'template-parts/content', 'projects-grid' ); ?>
+</div><!--/.slide .work #slide2-->
+
+<div class="slide articles" id="articles" data-slide="3" data-stellar-background-ratio="0.5">
   <div class="full clearfix">
     <div class="grid_12">
 	  <h2 class="title">Learn With Me</h2>
@@ -33,7 +48,7 @@
 </div><!--/.slide .articles #slide4-->
 
 
-<div class="slide contact" id="chat" data-slide="5" data-stellar-background-ratio="0.5">
+<div class="slide contact" id="contact" data-slide="4" data-stellar-background-ratio="0.5">
   <div class="full clearfix">
     <div class="grid_12">
 	  <h2 class="title">Let's Chat</h2>

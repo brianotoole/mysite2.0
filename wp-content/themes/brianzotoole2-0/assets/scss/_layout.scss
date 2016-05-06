@@ -190,6 +190,9 @@
 	height: auto;
 	padding: 30px 15px;
 }
+.slide-full {
+	padding: 30px 0;
+}
 /*--------------------------------------------------------------
 # Positioning & Sizings
 --------------------------------------------------------------*/
@@ -221,10 +224,11 @@
 # Templates
 --------------------------------------------------------------*/
 /* home */
-.slide {
+.slide,
+.slide-full {
 
-	//top section
-	&.about {
+	//hero section
+	&.hero {
 	    height: 500px;
 	    @media (min-width: 768px) {
 	        padding-top: 100px;
@@ -266,40 +270,55 @@
 		}
 	}
 	
-	//articles section 
-	&.articles {
-		background: white;
+	
+	//about section
+	&.about {
+		background-color: white;
+		background-size: 100%;
 		color: $black;
-		border-bottom: 4px solid darken($white,2%);//darken bg color
-		h2 {
-			color: $main;
+		border-bottom: 4px solid darken(white,2%);//darken bg color
+		
+		.button {
+			@media (min-width: 768px) {
+		        margin: 60px auto;
+		    }
 		}
-		.post-title {
-			color: $main;
+		
+		.intro-text {
+			font-size: $lg;
 		}
-		p.about {
-			font-size: $xl;
-			text-align: center;
+
+		img {
+			display: block;
+			margin: 125px auto auto;
+			width: 85px;
+			height: auto;
+			padding: 1px;
 		}
-		.star {
-			border-color: $main;
-			&:after {
-				background: white;
+		.skills {
+			font-size: $lg;
+			color: $white;
+			span {
+				color: $accent;
 			}
 		}
-		a {
-			text-decoration: none;
-		}
-		hr {
-		    background-color: darken($hr,2%);
+		.star {
+			margin-bottom: 50px;
+			border-color: $main;
+			&:after {
+				background-color: white;
+				color: $accent;
+
+			}
 		}
 	}
 	
+	
 	//work section
 	&.work {
-		background: white;
+		background-color: $light-gray;
 		color: $black;
-		border-bottom: 4px solid darken($white,2%);//darken bg color
+		border-bottom: 4px solid darken($light-gray,2%);//darken bg color
 		text-align: center;
 		h2 {
 			color: $black;
@@ -311,7 +330,7 @@
 			margin-bottom: 50px;
 			border-color: $main;
 			&:after {
-				background: white;
+				background-color: $light-gray;
 				color: $accent;
 
 			}
@@ -365,6 +384,37 @@
 		}
 	}
 	
+	
+	//articles section 
+	&.articles {
+		background-color: white;
+		color: $black;
+		border-bottom: 4px solid darken($light-gray,2%);//darken bg color
+		h2 {
+			color: $main;
+		}
+		.post-title {
+			color: $main;
+		}
+		p.about {
+			font-size: $xl;
+			text-align: center;
+		}
+		.star {
+			border-color: $main;
+			&:after {
+				background-color: white;
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+		hr {
+		    background-color: darken($hr,2%);
+		}
+	}
+	
+
 	//contact section
 	&.contact {
 		background: $main;

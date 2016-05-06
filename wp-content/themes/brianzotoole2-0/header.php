@@ -23,9 +23,10 @@
   </div><!--/.site-branding-->
   <nav class="site-navigation" role="navigation">
     <ul>
+      <li><a href="<?php bloginfo('url'); ?>/#about">About</a></li>
       <li><a href="<?php bloginfo('url'); ?>/#projects">Projects</a></li>
       <li><a href="<?php bloginfo('url'); ?>/#articles">Articles</a></li>
-      <li><a href="<?php bloginfo('url'); ?>/#chat">Chat</a></li>
+      <li><a href="<?php bloginfo('url'); ?>/#contact">Contact</a></li>
     </ul>
   </nav><!--/.site-navigation-->
 </header><!--/.site-branding-->

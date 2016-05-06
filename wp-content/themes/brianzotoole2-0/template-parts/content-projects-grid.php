@@ -13,7 +13,7 @@
 </div><!--/.filter-container-->
 
 
-<div class="masonry-grid text-center" id="projects-masonry">
+<div class="projects-grid text-center" id="projects-grid">
 
 <?php
 // arguments
@@ -26,22 +26,28 @@ $query = new WP_Query($args);
   $projectCategories = implode(' ', $projectCategories );
 
 ?>
-<a class="item <?php echo $projectCategories; ?>" href="<?php the_permalink(); ?>">
+<a class="item <?php echo $projectCategories; ?>">
   <div class="item-bg" style="background-image:url('<?php the_post_thumbnail_url(); ?>')">
-    <div class="item-overlay"></div>
+    <div class="item-overlay">
+      <div class="item-caption">
+        <span class="item-title">Project: <?php the_title(); ?></span>
+        <span class="item-view">View Details<i class="icon-right-dir" aria-hidden="true"></i></span> 
+      </div><!--/.item-caption-->
+	</div><!--/.item-overlay-->
   </div><!--/.item-bg-->
-  <div class="item-caption">
-    <p class="item-title"><strong>Project:</strong> <?php the_title(); ?></p>
-    <!--<span class="item-view">View Project Details<i class="icon-right-dir" aria-hidden="true"></i></span> -->
-  </div><!--/.item-caption-->
-</a>
+</a><!--/.item-->
+
+
+
+
+
 
 <?php endwhile; 
  wp_reset_postdata();
  else : 
  endif; 
 ?>
-</div><!--/.masonry-grid-->
+</div><!--/.projects-grid-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.min.js"></script>
@@ -50,7 +56,7 @@ $query = new WP_Query($args);
 //Init isotope when images are loaded 
 jQuery(document).ready(function($) {
 
-var $container = $('#projects-masonry');
+var $container = $('#projects-grid');
 
 if ($container.length) { //if lentgth is not 0 run...
 $container.imagesLoaded(function() {
@@ -61,7 +67,7 @@ $container.imagesLoaded(function() {
 	  masonry: {
 	    columnWidth: '.item',
         //rowHeight: '.item',
-		gutter: 20
+		gutter: 0
       }
   });
 });
@@ -70,7 +76,7 @@ $container.imagesLoaded(function() {
 //Filtering items
 $(document).on('click', '#filters a', function() {
   var selector = $(this).attr('data-filter');
-  $('#projects-masonry').isotope({ filter: selector });
+  $('#projects-grid').isotope({ filter: selector });
     return false;
 });
     	 
