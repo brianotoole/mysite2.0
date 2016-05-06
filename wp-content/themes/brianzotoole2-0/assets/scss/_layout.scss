@@ -24,7 +24,7 @@
 	    flex: 1 auto;
 	    font-family: $font-heading;
 	    @media (max-width: 768px) {
-		    margin: 10px 0;
+		    margin: 5px 0 15px;
 		}
 	}
 	
@@ -37,7 +37,8 @@
 		    color: $black;
 		    text-decoration: none;
 		    @media (max-width: 768px) {
-		        padding-top: 10px;
+		        display: block;
+		        padding-top: 20px;
 		    }
 		    span { color: $main;}
 		    &:before {
@@ -237,6 +238,12 @@
 	    padding-top: 100px;
 	    @media (max-width: 768px) {
 	        padding-top: 40px;
+	    }
+	    @media (max-width: 420px) {
+		    height: 600px;
+	    }
+	    @media (max-width: 320px) {
+		    height: 600px;
 	    }
 		background: linear-gradient($main, rgba($main, 0.9)), url('assets/img/bg_code.jpg');
 		background-size: 100%;

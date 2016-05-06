@@ -9,10 +9,9 @@
 
 <footer id="colophon" class="container site-footer" role="contentinfo">
   <div class="site-info">
-    <span>&copy; Copyright 2015 | <a href=""><?php bloginfo('name'); ?></a> | <a id="top" href="#">Back to Top</a></span>
+    <span>&copy; Copyright 2016 | <a href=""><?php bloginfo('name'); ?></a> | <a id="top" href="#">Back to Top</a></span>
   </div><!-- .site-info -->
 </footer><!-- #colophon -->
-
 
 <?php wp_footer(); ?>
 <script>

@@ -50,7 +50,6 @@ $query = new WP_Query($args);
 </div><!--/.projects-grid-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.min.js"></script>
 <script>
 // Page Specific Scripts
 //Init isotope when images are loaded 
@@ -59,7 +58,7 @@ jQuery(document).ready(function($) {
 var $container = $('#projects-grid');
 
 if ($container.length) { //if lentgth is not 0 run...
-$container.imagesLoaded(function() {
+$(function() {
   $container.isotope({
     itemSelector: '.item',
     layoutMode: 'masonry',
