@@ -240,13 +240,14 @@
 	        padding-top: 40px;
 	    }
 	    @media (max-width: 420px) {
-		    height: 600px;
+		    height: 540px;
 	    }
 	    @media (max-width: 320px) {
 		    height: 600px;
 	    }
 		background: linear-gradient($main, rgba($main, 0.9)), url('assets/img/bg_code.jpg');
-		background-size: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
 		color: $white;
 		border-bottom: 4px solid darken($main,2%);//darken bg color
 		
@@ -337,6 +338,9 @@
 		a {
 			text-decoration: none;
 		}
+		hr {
+			background-color: darken($hr,10%);
+		}
 		.star {
 			margin-bottom: 50px;
 			border-color: $main;
@@ -402,19 +406,22 @@
 		color: $black;
 		border-bottom: 4px solid darken($light-gray,2%);//darken bg color
 		h2 {
-			color: $main;
+			color: $black;
 		}
 		.post-title {
-			color: $main;
+			color: $black;
 		}
 		p.about {
 			font-size: $xl;
 			text-align: center;
 		}
 		.star {
+			margin-bottom: 50px;
 			border-color: $main;
 			&:after {
 				background-color: white;
+				color: $accent;
+
 			}
 		}
 		a {
@@ -505,6 +512,10 @@
 	color: $gray;
 }
 .entry-content {
+    
+    p {
+	    font-size: $md;
+    }
 
 	.entry-date {}
 

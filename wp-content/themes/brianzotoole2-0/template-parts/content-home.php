@@ -18,9 +18,9 @@
       <hr class="star">
       <h4>I help businesses and&nbsp;startups capture&nbsp;brand recognition using modern technology and&nbsp;design.</h4>
       <hr class="styled">
-      <h5>I have 12+ years of experience working with creative services and currently work at a full-service ad agency in Florida. I've worked with many talented teams of designers, developers, and entrepreneurs. All of whom have a deep understanding about the intuitions of brand marketing.</h5>
+      <h5>I have 10+ years of experience working with creative services and currently work at a full-service ad agency in Florida. I've worked alongside talented teams of designers, developers, and entrepreneurs, which has helped me develop  a deep understanding about the intuitions of brand marketing.</h5>
       <hr class="styled">
-      <h6>I sincerely enjoy the work I do and my clients garner the benefits. I am located in Tampa, Florida and love working with clients all over the USA. Outside of work, I like to explore new things and keep up with sports... particularly the NFL. <a href="http://bigcatcountry.com" target="_blank">Go Jaguars!</a></h6>
+      <h6>I sincerely enjoy the work I do and my clients garner the benefits. I am located in Tampa, Florida and love working with clients all over the USA. Outside of work, I like to explore new things and keep up with sports... particularly the NFL. <a href="http://bigcatcountry.com" target="_blank">Go Jags!</a></h6>
     </div><!--/.grid-->
   </div><!--/.container-->
 </div><!--/.slide .about #slide1-->
