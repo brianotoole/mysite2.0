@@ -14,8 +14,8 @@ $color6: #68A982;
 .projects-grid {
     display: flex;
     flex-flow: wrap;
-    margin: 1px auto;
     width: 100%;
+    margin: 0 auto -27px;
 
 .item {
     padding: 100px 0;
@@ -82,7 +82,7 @@ $color6: #68A982;
 	background-color: rgba($main, 0.95);
 	transition: all 0.5s ease-out;
 	&:hover {
-		background-color: rgba($main, 0.62);
+		background-color: rgba($accent, 0.62);
 	}
 }
 
@@ -117,7 +117,7 @@ $color6: #68A982;
 .filter-container {
 	
 	ul {
-		margin: 30px 0;
+		margin: 0 0 40px;
 		padding: 0;
 		list-style-type: none;
 		text-align: center;
@@ -136,11 +136,10 @@ $color6: #68A982;
 			transition: transform 0.3s;
 			
 			&:hover {
-				color: $black;
+				color: $main;
 				
 				&::before {
 					transform: scale(1) skew(0);
-					border: 1px solid $black;
 				}
 			}
 			

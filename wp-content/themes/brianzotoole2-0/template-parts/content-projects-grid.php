@@ -26,7 +26,7 @@ $query = new WP_Query($args);
   $projectCategories = implode(' ', $projectCategories );
 
 ?>
-<a class="item <?php echo $projectCategories; ?>">
+<a class="item <?php echo $projectCategories; ?>" href="<?php the_permalink(); ?>">
   <div class="item-bg" style="background-image:url('<?php the_post_thumbnail_url(); ?>')">
     <div class="item-overlay">
       <div class="item-caption">
